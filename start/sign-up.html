@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+        <!-- 
+
+        The shipping vs. billing address form for an order being placed.
+
+    -->
+		<article id="mainContent">
+            <h3>If you want to connect with the community and post content, please create an account.</h3>
+			
+			<h3>Sign up with the form below</h3>
+			<p>*indicates a required field!</p>
+	
+            <!-- A Simple Form    -->
+            <form id="sign-up-form" method="post" action="#">
+            	<fieldset>
+            		<h2>Ship to the below address!</h2>
+                    <!--The below code is for autopoulation of the delivery field. Will use code to dynamically change the content-->
+
+                    <!--<h2>Bill to the below address!</h2>
+                    <h2>Bill & ship to the below address!</h2>-->
+            		<ul>
+            			<li>
+            				<label id="userNameLabel">User Name: </label>
+            				<input id="userNameLabel" type="text" name="userName" placeholder="username" required  autofocus  />
+            			</li>
+            			<li>
+            				<label id="pw">Password: </label>
+            				<input id="pw" type="text" name="password" placeholder="password" required />
+            			</li>            			
+            			<li>
+            				<label id="yearLabel">Year of Birth: </label>
+            				<select name="year" placeholder="Select one" required>
+            					<option value="1971">1971</option>
+            					<option value="1972">1972</option>
+            					<option value="1973">1973</option>
+            					<option value="1974">1974</option>
+            					<option value="1975">1975</option>
+            					<option value="1976">1976</option>
+            					<option value="1977">1977</option>
+            					<option value="1978">1978</option>
+            					<option value="1979">1979</option>
+            					<option value="1980">1980</option>
+            				</select>
+            			</li>
+            			<li>
+            				<label id="dobLabel">Date of Birth: </label>
+            				<select name="dob" placeholder="Select one" required>
+            					<option value="1">1</option>
+            					<option value="2">2</option>
+            					<option value="3">3</option>
+            					<option value="4">4</option>
+            					<option value="5">5</option>
+            					<option value="6">6</option>
+            					<option value="7">7</option>
+            					<option value="8">8</option>
+            					<option value="9">9</option>
+            					<option value="10">10</option>
+            				</select>
+            			</li>
+            			<li>
+            				<label>Please enter a valid email</label>
+            				<input type="email" name="email" placeholder="example@example.com"></input>
+            			</li>
+            			<li>
+            				<label>Please enter a donation amount</label>
+            				$<input type="number" name="donation" value="100" min="0" max="1000" placeholder="100"></input>
+            			</li>
+            			<li>
+            				<label id="addressLabel">Address: </label>
+            				<input id="addressLabel" type="text" name="address" placeholder="Your address" required />
+            			</li>
+            			<li>
+            				<label id="cityLabel">City: </label>
+            				<input id="cityLabel" type="text" name="city" placeholder="City" required />
+            			</li>
+            			<li>
+            				<label id="stateLabel">State: </label>
+            				<input id="stateLabel" type="text" name="state" placeholder="State" required />
+            			</li>
+            			<li>
+            				<label id="zipLabel">Zip: </label>
+            				<input id="zipLabel" type="text" name="zip" placeholder="98122" required pattern="^[0-9]{5}"/>
+            			</li>
+
+            		</ul>
+            		<input type="submit" name="submit" value="Submit" />
+            	</fieldset>
+
+
+
+            </form>	
+
+        </article><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2016</p>
+			
+		</footer>
+
+	</body>
+</html>

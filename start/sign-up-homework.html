@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>If you want to connect with the community and post content, please create an account.</h3>
+			<!-- A Simple Form    -->
+		<h3>Sign up with the form below</h3>
+			<p>*indicates a required field!</p>
+	
+            <!-- A Simple Form    -->
+            <form id="sign-up-form" method="post" action="#">
+            	<fieldset>
+            		<h2>Ship to the below address!</h2>
+                    <!--The below code is for autopoulation of the delivery field. Will use code to dynamically change the content-->
+
+                    <!--<h2>Bill to the below address!</h2>
+                    <h2>Bill & ship to the below address!</h2>-->	
+
+            		<ul>
+            			<li>
+            				<label for="shippingBillingLabel">Is this Shipping: </label>
+            				<select name="shippingBillingInfo" placeholder="Select one" required>
+            					<option value="billing">Billing</option>
+            					<option value="shipping">Shipping</option>
+            					<option value="shippingBilling">Both</option>
+            				</select>
+            			</li>
+            			<li>
+            				<label for="nameLabel" required autofocus>Name: </label>
+            				<input id="nameLabel" type="text" name="userName" placeholder="John Smith" size="20" required />
+            			</li>
+            			<li>
+            				<label for="addressOneLabel">Address: </label>
+            				<input id="addressOneLabel" type="text" name="addressOne" placeholder="Street address, P.O. box,  company name, c/o" size="25" required />
+            			</li>            			
+            			<li>
+            				<label for="addressTwoLabel">Address: </label>
+            				<input id="addressTwoLabel" type="text" name="addressOne" placeholder="Apartment, suite, unit, building, floor, etc." size="25" required />
+            			</li>        
+            			<li>
+            				<label for="cityLabel">City: </label>
+            				<input id="cityLabel" type="text" name="city" placeholder="City" required />
+            			</li>
+            			<li>
+            				<label for="stateLabel">State: </label>
+            				<input id="stateLabel" type="text" name="state" placeholder="State/Province/Region" required />
+            			</li>
+            			<li>
+            				<label for="zipLabel">Zip: </label>
+            				<input id="zipLabel" type="text" name="zip" placeholder="98122" required pattern="^[0-9]{5}"/>
+            			</li>
+            			<li>
+            				<label for="phoneLabel">Phone numbe3r: </label>
+            				<input id="phoneLabel" type="tel" name="phone" placeholder="206-555-1234" required />
+            			</li>
+
+            			<li>
+            				<label for="country">Country: </label>
+            				<select id="country" name="country" placeholder"United States" required>
+            					<option value="unitedStates">United States</option>
+            					<option value="afghanistan">Afghanistan</option>
+            					<option value="alandIslands">Aland Islands</option>
+            					<option value="albania">Albania</option>
+            					<option value="algeria">Algeria</option>
+            					<option value="americanSomoa">American Somoa</option>
+            					<option value="andorra">Andorra</option>
+            					<option value="angola">Angola</option>
+            					<option value="anguilla">Anguilla</option>
+            					<option value="antiguaAndBarbuda">Antigua and Barbuda</option>
+            					<option value="Argentina">Argentina</option>
+            					<option value="armenia">Armenia</option>
+            					<option value="aruba">Aruba</option>
+            					<option value="australia">Australia</option>
+            					<option value="austria">Austria</option>
+            					<option value="azerbaijan">Azerbaijan</option>
+            				</select>
+            			</li>
+						<li>
+            				<label>Please enter a tip for your delivery person. (We will be sure they get it. winkwink nodnod)</label>
+            				<input type="number" name="donation" value="100" min="0" max="1000" placeholder="100"></input>
+            			</li>
+            			
+            			<li>
+            				<label for="dobLabel">Date of Birth: </label>
+            				<select name="dob" placeholder="Select one" required>
+            					<option value="1">1</option>
+            					<option value="2">2</option>
+            					<option value="3">3</option>
+            					<option value="4">4</option>
+            					<option value="5">5</option>
+            					<option value="6">6</option>
+            					<option value="7">7</option>
+            					<option value="8">8</option>
+            					<option value="9">9</option>
+            					<option value="10">10</option>
+            				</select>
+            			</li>
+            			<li>
+            				<label>Please enter a valid email</label>
+            				<input type="email" name="email" placeholder="example@example.com"></input>
+            			</li>
+            			
+            			
+
+            		</ul>
+            		<input type="submit" name="submit" value="Submit" />
+            	</fieldset>
+
+
+
+            </form>	
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2016</p>
+			
+		</footer>
+
+	</body>
+</html>
